@@ -1,57 +1,135 @@
-p
-{
-    font-size: 18px;
-    line-height: 1.6;
-    color: #151710;
-    margin-bottom: 1em;
+/* --- 1. GENERAL STYLES --- */
+html {
+    scroll-behavior: smooth; /* Makes scrolling smooth when clicking menu links */
 }
 
-h1
-{
-    font-size: 36px;
-    color: #010000;
-    text-align: center;
-}
-
-h2
-{
-    font-size: 30px;
-    color: #010000;
-    margin-bottom: 1em;
-    text-align: left;
-}
-
-body
-{
+body {
     font-family: Arial, sans-serif;
-    background-color: #e2e9ec;
-    padding: 20px;
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    color: #333333;            /* Dark gray text for easy reading */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- 2. NAVIGATION BAR --- */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul
-{
+.logo {
+    margin: 0;
+    color: #2b6cb0;
+    font-size: 20px;
+}
+
+.header nav ul {
     list-style: none;
-    background-color: #f6f4f4;
+    margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
-nav a
-{
-    color: #333;
+.header nav a {
     text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-}
-nav a:hover
-{
-    background-color: rgb(32, 181, 121);
-    color: white;
+    color: #4a5568;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.2s;
 }
 
-html{
-    scroll-behavior: smooth;
+.header nav a:hover {
+    color: #2b6cb0; /* Turns blue when mouse hovers over it */
+}
+
+/* --- 3. MAIN CONTAINER & BOXES --- */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each section box */
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow effect */
+}
+
+/* --- 4. HEADINGS & TEXT --- */
+h1, h2 {
+    color: #1a202c;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+/* --- 5. SKILL TAGS --- */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tag {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* --- 6. SOCIAL BUTTONS --- */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.email-btn { background-color: #dd6b20; }
+.github-btn { background-color: #24292e; }
+.tiktok-btn { background-color: #010101; }
+
+.btn:hover {
+    opacity: 0.85; /* Slightly fade when hovering */
+}
+
+/* --- 7. FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #718096;
+    font-size: 14px;
 }

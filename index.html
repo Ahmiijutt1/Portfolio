@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ahmad | Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Ahmad's Portfolio</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad | Portfolio</title>
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="header">
+        <div class="nav-container">
+            <h2 class="logo">Ahmad.dev</h2>
             <nav>
                 <ul>
-                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#goals">Goals</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <section id="introduction">
-                <h2>Introduction</h2>
-                <p>Welcome to my portfolio! I am Ahmad, a Software Engineering student passionate about web development and programming.</p>
-            </section>
+        </div>
+    </header>
 
-            <section id="goals">
-                <h2>Goals</h2>
-                <p>My goal is to become a proficient software engineer, contributing to innovative projects and continuously improving my skills in web development.</p>
-            </section>
+    <!-- MAIN CONTENT -->
+    <main class="container">
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Feel free to reach out to me via email at <a href="mailto:ahmad624246@gmail.com">ahmad624246@gmail.com</a> or through my social media profiles.</p>
-                <a href="https://www.tiktok.com/@_ahmijutt" target="_blank" rel="noopener noreferrer">Follow me on TikTok</a>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkC1yk4XSN6RyDMG6hOrS4DMjuToJ39deiuwoPi4KhkA&s=10" alt="Random Image" width="260">
-            </section>
-        </main>
-       <footer>
-            <p>&copy; 2026 Ahmad. All rights reserved.</p>
-        </footer>
+        <!-- Introduction Section -->
+        <section id="about" class="box">
+            <h1>Hi, I'm Ahmad 👋</h1>
+            <p>Welcome to my portfolio! I am a Software Engineering student passionate about web development, programming, and building cool projects.</p>
+            <button id="greet-btn">Click me</button>
+            <p id="message"></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="box">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <span class="tag">C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">HTML & CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git & GitHub</span>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="goals" class="box">
+            <h2>My Goals</h2>
+            <p>My goal is to become a skilled software engineer, build innovative web applications, and keep learning new technologies every single day.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="box">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to me through any of the links below:</p>
+            
+            <div class="social-links">
+                <a href="mailto:ahmad624246@gmail.com" class="btn email-btn">Email Me</a>
+                <a href="https://github.com/Ahmiijutt1" target="_blank" class="btn github-btn">GitHub</a>
+                <a href="https://www.tiktok.com/@_ahmijutt" target="_blank" class="btn tiktok-btn">TikTok</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Ahmad. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
-
-
